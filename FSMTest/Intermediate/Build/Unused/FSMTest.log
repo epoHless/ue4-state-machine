@@ -1,0 +1,43 @@
+﻿  Creating makefile for FSMTestEditor (no existing makefile)
+  Parsing headers for FSMTestEditor
+    Running UnrealHeaderTool "C:\Users\kevin\Documents\Programming\Unreal\FSMTest\FSMTest.uproject" "C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\FSMTestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\kevin\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for FSMTestEditor in 10.7264099 seconds
+  Building FSMTestEditor...
+  Using Visual Studio 2019 14.31.31104 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 7 actions with 16 processes...
+    [1/7] TestFSMCharacter.cpp
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(5): error C2504: 'FPlayerState': base class undefined
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C3668: 'FMovingState::handleInput': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C3668: 'FMovingState::Update': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(9): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(10): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\TestFSMCharacter.cpp(25): error C2660: 'FPlayerState::Update': function does not take 1 arguments
+    C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(10): note: see declaration of 'FPlayerState::Update'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\TestFSMCharacter.cpp(37): error C2660: 'FPlayerState::handleInput': function does not take 2 arguments
+    C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(9): note: see declaration of 'FPlayerState::handleInput'
+    [2/7] MovingState.cpp
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C2143: syntax error: missing ';' before '*'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C2238: unexpected token(s) preceding ';'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\PlayerState.h(12): error C3646: 'Moving': unknown override specifier
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\PlayerState.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+    [3/7] PlayerState.cpp
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(5): error C2504: 'FPlayerState': base class undefined
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C3668: 'FMovingState::handleInput': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C3668: 'FMovingState::Update': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C2143: syntax error: missing ';' before '*'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/TestFSMCharacter.h(33): error C2238: unexpected token(s) preceding ';'
+    [4/7] TestFSMCharacter.gen.cpp
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(5): error C2504: 'FPlayerState': base class undefined
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(7): error C3668: 'FMovingState::handleInput': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine\MovingState.h(8): error C3668: 'FMovingState::Update': method with override specifier 'override' did not override any base class methods
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(9): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\State Machine/PlayerState.h(10): error C2061: syntax error: identifier 'ATestFSMCharacter'
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_4.26\Engine\Build\BatchFiles\Build.bat" FSMTestEditor Win64 Development -Project="C:\Users\kevin\Documents\Programming\Unreal\FSMTest\FSMTest.uproject" -WaitMutex -FromMsBuild" exited with code 6.

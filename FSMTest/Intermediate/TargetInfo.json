@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FSMTest",
+			"Path": "C:\\Users\\kevin\\Documents\\Programming\\Unreal\\FSMTest\\Source\\FSMTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FSMTestEditor",
+			"Path": "C:\\Users\\kevin\\Documents\\Programming\\Unreal\\FSMTest\\Source\\FSMTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
