@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\FSMTest\\Source\\FSMTest\\FSMTest.Build.cs",
-		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\FSMTest\\Source\\FSMTest.Target.cs",
-		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\FSMTest\\Source\\FSMTestEditor.Target.cs"
+		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\ue4-state-machine\\ue4-state-machine\\FSMTest\\Source\\FSMTest\\FSMTest.Build.cs",
+		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\ue4-state-machine\\ue4-state-machine\\FSMTest\\Source\\FSMTest.Target.cs",
+		"C:\\Users\\kevin\\Documents\\Programming\\Unreal\\ue4-state-machine\\ue4-state-machine\\FSMTest\\Source\\FSMTestEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

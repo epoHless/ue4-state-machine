@@ -4,6 +4,7 @@
 
 UAStateProcessor::UAStateProcessor()
 {
+	PrimaryComponentTick.bCanEverTick = true;
 }
 
 void UAStateProcessor::ChangeState(TSubclassOf<UState> NewState)
@@ -24,4 +25,11 @@ void UAStateProcessor::BeginPlay()
 	
 	CurrentState = GetStartupState();
 	CurrentState->Start(this, Controller);
+}
+
+void UAStateProcessor::TickComponent(float DeltaTime, ELevelTick Tick, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, Tick, ThisTickFunction);
+
+	CurrentState->Update(this, Controller);
 }

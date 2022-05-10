@@ -23,13 +23,17 @@ public:
 	UFUNCTION(Category="Processor", BlueprintCallable)
 	void SetController(UCharacterMovementComponent* NewController) {Controller = NewController;}
 
+	
+
 protected:
 	virtual void BeginPlay() override;
 
-	UFUNCTION(Category="Processor", BlueprintNativeEvent)
-	UState* GetStartupState();
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
+								   FActorComponentTickFunction* ThisTickFunction) override;
 	
-private:
+	UFUNCTION(Category="Processor", BlueprintNativeEvent)
+	UState* GetStartupState();	
+
 	UPROPERTY(VisibleAnywhere)
 	UState* CurrentState;
 

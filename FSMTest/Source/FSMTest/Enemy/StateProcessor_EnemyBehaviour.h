@@ -11,6 +11,7 @@
 UCLASS(BlueprintType, meta=(BlueprintSpawnableComponent, DisplayName="Enemy State Processor"))
 class FSMTEST_API UStateProcessor_EnemyBehaviour : public UAStateProcessor
 {
+private:
 	GENERATED_BODY()
 
 	UPROPERTY(EditDefaultsOnly)

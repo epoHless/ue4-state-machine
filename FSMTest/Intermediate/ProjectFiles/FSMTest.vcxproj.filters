@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FSMTest.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{26E48044-FDBC-4724-91C1-0542C43185DA}</UniqueIdentifier>
+      <UniqueIdentifier>{C49AFDC9-7718-428A-A78C-8BD5B7AFD608}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FSMTest.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\FSMTestEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\FSMTest.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{A2D6EC25-3227-4879-8E46-BF8E64E3A451}</UniqueIdentifier>
+      <UniqueIdentifier>{8931949A-B403-40C3-B1EE-AB1AF39C2953}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +28,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FSMTest">
-      <UniqueIdentifier>{C6785F48-B278-4CDF-A6BC-838CECA4F82F}</UniqueIdentifier>
+      <UniqueIdentifier>{77FBB354-9DDF-48AE-AEC5-AB65F8A7AD42}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FSMTest\FSMTest.Build.cs">
       <Filter>Source\FSMTest</Filter>
@@ -57,7 +58,7 @@
       <Filter>Source\FSMTest</Filter>
     </ClInclude>
     <Filter Include="Source\FSMTest\Character">
-      <UniqueIdentifier>{6446EB2B-3A4D-405E-AFEC-55D1B8CD2149}</UniqueIdentifier>
+      <UniqueIdentifier>{6F638CA3-F83A-4698-A7FA-5A2C3D03FBFA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FSMTest\Character\StateProcessor_CharacterMovement.cpp">
       <Filter>Source\FSMTest\Character</Filter>
@@ -66,7 +67,7 @@
       <Filter>Source\FSMTest\Character</Filter>
     </ClInclude>
     <Filter Include="Source\FSMTest\Enemy">
-      <UniqueIdentifier>{2D5A5C02-2B18-408F-B3C3-17AA775F439C}</UniqueIdentifier>
+      <UniqueIdentifier>{DB56B24C-1CD5-416F-B0A4-95B3CB6CF745}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FSMTest\Enemy\StateProcessor_EnemyBehaviour.cpp">
       <Filter>Source\FSMTest\Enemy</Filter>
@@ -75,7 +76,7 @@
       <Filter>Source\FSMTest\Enemy</Filter>
     </ClInclude>
     <Filter Include="Source\FSMTest\Player">
-      <UniqueIdentifier>{22B7A03E-AE5B-4AB7-A5C3-0CE6D4CC0F2D}</UniqueIdentifier>
+      <UniqueIdentifier>{FA06C1AB-A240-4378-AD73-5506B98F93AF}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FSMTest\Player\PlayerCharacter.cpp">
       <Filter>Source\FSMTest\Player</Filter>
@@ -84,14 +85,8 @@
       <Filter>Source\FSMTest\Player</Filter>
     </ClInclude>
     <Filter Include="Source\FSMTest\SM">
-      <UniqueIdentifier>{E4F00C66-1C3B-4399-9D71-26832A8FEA09}</UniqueIdentifier>
+      <UniqueIdentifier>{55C173DC-40BD-426D-B488-133DA1FEC469}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\FSMTest\SM\EnemyState.cpp">
-      <Filter>Source\FSMTest\SM</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\FSMTest\SM\EnemyState.h">
-      <Filter>Source\FSMTest\SM</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\FSMTest\SM\State.h">
       <Filter>Source\FSMTest\SM</Filter>
     </ClInclude>
@@ -102,13 +97,16 @@
       <Filter>Source\FSMTest\SM</Filter>
     </ClInclude>
     <Filter Include="Source\FSMTest\SM\EnemySM">
-      <UniqueIdentifier>{63615241-CBCD-4999-83CE-1B9E848A649E}</UniqueIdentifier>
+      <UniqueIdentifier>{85DA4B94-9F6C-470C-AE89-103097FD9DA2}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Source\FSMTest\SM\EnemySM\NewFile1.txt">
+    <ClCompile Include="..\..\Source\FSMTest\SM\EnemySM\EnemyState.cpp">
       <Filter>Source\FSMTest\SM\EnemySM</Filter>
-    </None>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FSMTest\SM\EnemySM\EnemyState.h">
+      <Filter>Source\FSMTest\SM\EnemySM</Filter>
+    </ClInclude>
     <Filter Include="Source\FSMTest\SM\PlayerSM">
-      <UniqueIdentifier>{EEE93F35-FA5E-4042-B66F-376885A79124}</UniqueIdentifier>
+      <UniqueIdentifier>{E25B784A-61BB-4AE1-A2C8-1585F79D50D5}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FSMTest\SM\PlayerSM\IdleState.cpp">
       <Filter>Source\FSMTest\SM\PlayerSM</Filter>

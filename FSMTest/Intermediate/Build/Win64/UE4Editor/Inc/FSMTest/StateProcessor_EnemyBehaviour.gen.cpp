@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_EnemyBehaviour() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStateProcessor_EnemyBehaviour, 423353205);
+	IMPLEMENT_CLASS(UStateProcessor_EnemyBehaviour, 1032189132);
 	template<> FSMTEST_API UClass* StaticClass<UStateProcessor_EnemyBehaviour>()
 	{
 		return UStateProcessor_EnemyBehaviour::StaticClass();

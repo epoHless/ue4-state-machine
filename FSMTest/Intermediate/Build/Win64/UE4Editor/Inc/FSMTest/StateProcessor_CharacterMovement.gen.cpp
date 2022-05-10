@@ -248,7 +248,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStateProcessor_CharacterMovement, 24639011);
+	IMPLEMENT_CLASS(UStateProcessor_CharacterMovement, 1500457320);
 	template<> FSMTEST_API UClass* StaticClass<UStateProcessor_CharacterMovement>()
 	{
 		return UStateProcessor_CharacterMovement::StaticClass();

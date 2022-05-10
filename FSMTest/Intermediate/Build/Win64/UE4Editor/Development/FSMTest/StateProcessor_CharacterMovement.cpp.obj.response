@@ -230,8 +230,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\UE4Editor\Inc\FSMTest
-/I C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source
+/I C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\UE4Editor\Inc\FSMTest
+/I C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Source
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest\Character\StateProcessor_CharacterMovement.cpp"
-/FI"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\UE4Editor\Development\FSMTest\Definitions.FSMTest.h"
-/Fo"C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\UE4Editor\Development\FSMTest\StateProcessor_CharacterMovement.cpp.obj"
+/FI"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\FSMTestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Source\FSMTest\Character\StateProcessor_CharacterMovement.cpp"
+/FI"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\UE4Editor\Development\FSMTest\Definitions.FSMTest.h"
+/Fo"C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\UE4Editor\Development\FSMTest\StateProcessor_CharacterMovement.cpp.obj"
 /TP
 /GR-
 /W4

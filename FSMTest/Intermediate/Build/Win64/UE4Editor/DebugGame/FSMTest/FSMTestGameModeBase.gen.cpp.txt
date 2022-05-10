@@ -1,9 +1,0 @@
-C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\UE4Editor\DebugGame\FSMTest\Definitions.FSMTest.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Source\FSMTest/FSMTestGameModeBase.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\kevin\Documents\Programming\Unreal\FSMTest\Intermediate\Build\Win64\UE4Editor\Inc\FSMTest\FSMTestGameModeBase.generated.h
