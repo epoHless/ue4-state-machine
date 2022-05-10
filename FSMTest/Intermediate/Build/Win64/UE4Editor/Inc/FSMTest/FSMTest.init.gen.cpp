@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFSMTest_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x18757E0C,
+				0x2C8BBF78,
 				0x4C9C15DE,
 				METADATA_PARAMS(nullptr, 0)
 			};

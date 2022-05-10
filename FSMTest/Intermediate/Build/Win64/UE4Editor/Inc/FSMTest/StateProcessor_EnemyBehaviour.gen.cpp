@@ -203,7 +203,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_EnemyBehaviour() {}
 		{ "ModuleRelativePath", "Enemy/StateProcessor_EnemyBehaviour.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol = { "Patrol", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_EnemyBehaviour, Patrol), Z_Construct_UClass_UEnemyState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol = { "Patrol", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_EnemyBehaviour, Patrol), Z_Construct_UClass_UEnemyState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Patrol_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_EnemyBehaviour_Statics::NewProp_Engage_MetaData[] = {
 		{ "Category", "StateProcessor_EnemyBehaviour" },
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_EnemyBehaviour() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStateProcessor_EnemyBehaviour, 1032189132);
+	IMPLEMENT_CLASS(UStateProcessor_EnemyBehaviour, 1498111265);
 	template<> FSMTEST_API UClass* StaticClass<UStateProcessor_EnemyBehaviour>()
 	{
 		return UStateProcessor_EnemyBehaviour::StaticClass();

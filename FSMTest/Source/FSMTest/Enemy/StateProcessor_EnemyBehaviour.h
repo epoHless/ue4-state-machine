@@ -14,7 +14,7 @@ class FSMTEST_API UStateProcessor_EnemyBehaviour : public UAStateProcessor
 private:
 	GENERATED_BODY()
 
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere)
 	TSubclassOf<UEnemyState> Patrol;
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<UEnemyState> Engage;
