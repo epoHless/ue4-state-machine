@@ -8,18 +8,15 @@
 
 void UAttackState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->bEnableOnScreenDebugMessages = true;
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Attack Start"));
 	character->bOrientRotationToMovement = false;
 	character->GetNavAgentPropertiesRef().bCanCrouch = false;
-	character->MaxWalkSpeed = 300.0f;
+	character->MaxWalkSpeed = 200.0f;
 	Processor->ReturnOwner()->bUseControllerRotationYaw = true;
+	Name = "Focusing";
 }
 
 void UAttackState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Attacking"));
-	
 	if (!Processor->ReturnOwner()->AttackStance)
 	{
 		if (character->Velocity == FVector::ZeroVector)
@@ -31,7 +28,6 @@ void UAttackState::Update_Implementation(UAStateProcessor* Processor, UCharacter
 
 void UAttackState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2, FColor::Blue, TEXT("attack End"));
 	character->bOrientRotationToMovement = true;
 	character->GetNavAgentPropertiesRef().bCanCrouch = true;
 	character->MaxWalkSpeed = 600.0f;

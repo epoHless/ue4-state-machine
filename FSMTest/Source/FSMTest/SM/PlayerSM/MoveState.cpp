@@ -8,13 +8,11 @@
 
 void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->bEnableOnScreenDebugMessages = true;
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Move Start"));
+	Name = "Moving";
 }
 
 void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Moving"));
 
 	if (character->Velocity == FVector::ZeroVector)
 	{
@@ -36,5 +34,4 @@ void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMo
 
 void UMoveState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Move End"));
 }

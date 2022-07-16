@@ -9,13 +9,11 @@
 
 void UCrouchState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->bEnableOnScreenDebugMessages = true;
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Crouch Start"));
+	Name = "Walking";
 }
 
 void UCrouchState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Crouching"));
 	
 	if (!character->IsCrouching())
 	{
@@ -32,5 +30,4 @@ void UCrouchState::Update_Implementation(UAStateProcessor* Processor, UCharacter
 
 void UCrouchState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2, FColor::Blue, TEXT("Crouch End"));
 }

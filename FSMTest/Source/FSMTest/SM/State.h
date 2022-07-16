@@ -1,4 +1,5 @@
 ﻿#pragma once
+
 #include "StateProcessor.h"
 #include "State.generated.h"
 
@@ -20,6 +21,12 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UCharacterMovementComponent* CharacterController;
+	
+	UPROPERTY()
+	FString Name;
+
+	UFUNCTION(Category = "State", BlueprintCallable, BlueprintPure)
+	FORCEINLINE FString ReturnName()const { return Name; }
 };
 
 inline void UState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
