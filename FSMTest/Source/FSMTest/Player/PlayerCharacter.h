@@ -17,6 +17,12 @@ public:
 	UPROPERTY(EditAnywhere)
 	float MovementSpeed = 200.0f;
 
+	UPROPERTY(EditAnywhere)
+	float RollHeight = 50.0f;
+
+	UPROPERTY(EditAnywhere)
+	float JumpHeight = 460.0f;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -30,6 +36,9 @@ public:
 
 	void CrouchPlayer();
 	void UncrouchPlayer();
+
+	void JumpCharacter();
+	void RollCharacter();
 };
 
 

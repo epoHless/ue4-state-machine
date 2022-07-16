@@ -1,5 +1,6 @@
 #include "PlayerCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 
 APlayerCharacter::APlayerCharacter()
 {
@@ -9,6 +10,8 @@ APlayerCharacter::APlayerCharacter()
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f,500.0f,0.0f);
+
+	GetCharacterMovement()->JumpZVelocity = JumpHeight;
 }
 
 void APlayerCharacter::BeginPlay()
@@ -25,7 +28,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &APlayerCharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &APlayerCharacter::JumpCharacter);
+	PlayerInputComponent->BindAction(TEXT("Roll"), IE_Pressed, this, &APlayerCharacter::RollCharacter);
+	
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &APlayerCharacter::CrouchPlayer);
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &APlayerCharacter::UncrouchPlayer);
 	
@@ -40,12 +45,16 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 void APlayerCharacter::MoveRight(float value)
 {
-	AddMovementInput(GetActorRightVector(), value);
+	auto YawRotation = GetControlRotation().Yaw;
+	auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
+	AddMovementInput(UKismetMathLibrary::GetRightVector(NewRotation), value);
 }
 
 void APlayerCharacter::MoveForward(float value)
 {
-	AddMovementInput(GetActorForwardVector(), value);	
+	auto YawRotation = GetControlRotation().Yaw;
+	auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
+	AddMovementInput(UKismetMathLibrary::GetForwardVector(NewRotation), value);
 }
 
 void APlayerCharacter::CrouchPlayer()
@@ -56,4 +65,16 @@ void APlayerCharacter::CrouchPlayer()
 void APlayerCharacter::UncrouchPlayer()
 {
 	UnCrouch();
+}
+
+void APlayerCharacter::JumpCharacter()
+{
+	GetCharacterMovement()->JumpZVelocity = JumpHeight;
+	Jump();
+}
+
+void APlayerCharacter::RollCharacter()
+{
+	GetCharacterMovement()->JumpZVelocity = RollHeight;
+	Jump();
 }
