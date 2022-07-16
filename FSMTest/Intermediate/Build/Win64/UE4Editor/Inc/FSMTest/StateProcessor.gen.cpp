@@ -17,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor() {}
 	FSMTEST_API UClass* Z_Construct_UClass_UAStateProcessor();
 	ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 	UPackage* Z_Construct_UPackage__Script_FSMTest();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FSMTEST_API UClass* Z_Construct_UClass_UState_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCharacterMovementComponent_NoRegister();
 // End Cross Module References
@@ -45,7 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor() {}
 	}
 	DEFINE_FUNCTION(UAStateProcessor::execChangeState)
 	{
-		P_GET_OBJECT(UClass,Z_Param_NewState);
+		P_GET_OBJECT(UState,Z_Param_NewState);
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->ChangeState(Z_Param_NewState);
@@ -73,16 +72,16 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor() {}
 	{
 		struct AStateProcessor_eventChangeState_Parms
 		{
-			TSubclassOf<UState>  NewState;
+			UState* NewState;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_NewState;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NewState;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UAStateProcessor_ChangeState_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStateProcessor_eventChangeState_Parms, NewState), Z_Construct_UClass_UState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAStateProcessor_ChangeState_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AStateProcessor_eventChangeState_Parms, NewState), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAStateProcessor_ChangeState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAStateProcessor_ChangeState_Statics::NewProp_NewState,
 	};
@@ -232,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FSMTest,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAStateProcessor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAStateProcessor_ChangeState, "ChangeState" }, // 2821942821
+		{ &Z_Construct_UFunction_UAStateProcessor_ChangeState, "ChangeState" }, // 669189580
 		{ &Z_Construct_UFunction_UAStateProcessor_GetCurrentState, "GetCurrentState" }, // 2105180795
 		{ &Z_Construct_UFunction_UAStateProcessor_GetStartupState, "GetStartupState" }, // 3768065835
 		{ &Z_Construct_UFunction_UAStateProcessor_SetController, "SetController" }, // 4138755215
@@ -290,7 +289,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAStateProcessor, 36364946);
+	IMPLEMENT_CLASS(UAStateProcessor, 1807250342);
 	template<> FSMTEST_API UClass* StaticClass<UAStateProcessor>()
 	{
 		return UAStateProcessor::StaticClass();

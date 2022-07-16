@@ -14,8 +14,8 @@ class AWaypoint;
 #endif
 #define FSMTEST_TravelerComponent_generated_h
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_SPARSE_DATA
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_RPC_WRAPPERS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_SPARSE_DATA
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetCurrentWaypoint); \
 	DECLARE_FUNCTION(execSetInitialWaypoint); \
@@ -23,7 +23,7 @@ class AWaypoint;
 	DECLARE_FUNCTION(execGetInitialWaypoint);
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetCurrentWaypoint); \
 	DECLARE_FUNCTION(execSetInitialWaypoint); \
@@ -31,7 +31,7 @@ class AWaypoint;
 	DECLARE_FUNCTION(execGetInitialWaypoint);
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_INCLASS_NO_PURE_DECLS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTravelerComponent(); \
 	friend struct Z_Construct_UClass_UTravelerComponent_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(UTravelerComponent)
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_INCLASS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesUTravelerComponent(); \
 	friend struct Z_Construct_UClass_UTravelerComponent_Statics; \
@@ -49,7 +49,7 @@ public: \
 	DECLARE_SERIALIZER(UTravelerComponent)
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_STANDARD_CONSTRUCTORS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTravelerComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTravelerComponent) \
@@ -62,7 +62,7 @@ private: \
 public:
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_ENHANCED_CONSTRUCTORS \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UTravelerComponent(UTravelerComponent&&); \
@@ -73,31 +73,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTravelerComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTravelerComponent)
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Waypoints() { return STRUCT_OFFSET(UTravelerComponent, Waypoints); }
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_8_PROLOG
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_GENERATED_BODY_LEGACY \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_8_PROLOG
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_SPARSE_DATA \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_RPC_WRAPPERS \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_INCLASS \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_STANDARD_CONSTRUCTORS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_SPARSE_DATA \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_RPC_WRAPPERS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_INCLASS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FSMTest_Source_FSMTest_TravelerComponent_h_11_GENERATED_BODY \
+#define FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_SPARSE_DATA \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_INCLASS_NO_PURE_DECLS \
-	FSMTest_Source_FSMTest_TravelerComponent_h_11_ENHANCED_CONSTRUCTORS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_PRIVATE_PROPERTY_OFFSET \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_SPARSE_DATA \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_INCLASS_NO_PURE_DECLS \
+	FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -105,7 +105,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FSMTEST_API UClass* StaticClass<class UTravelerComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FSMTest_Source_FSMTest_TravelerComponent_h
+#define CURRENT_FILE_ID FSMTest_Source_FSMTest_Waypoints_TravelerComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

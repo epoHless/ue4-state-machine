@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FSMTest/Waypoint.h"
+#include "FSMTest/Waypoints/Waypoint.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -69,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWaypoint, nullptr, "GetNextWaypoint", nullptr, nullptr, sizeof(Waypoint_eventGetNextWaypoint_Parms), Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetNextWaypoint_Statics::Function_MetaDataParams)) };
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWaypoint, nullptr, "GetPreviousWaypoint", nullptr, nullptr, sizeof(Waypoint_eventGetPreviousWaypoint_Parms), Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint_Statics::Function_MetaDataParams)) };
@@ -135,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AWaypoint, nullptr, "GetRandomWaypoint", nullptr, nullptr, sizeof(Waypoint_eventGetRandomWaypoint_Parms), Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AWaypoint_GetRandomWaypoint_Statics::Function_MetaDataParams)) };
@@ -181,27 +181,27 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FSMTest,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AWaypoint_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AWaypoint_GetNextWaypoint, "GetNextWaypoint" }, // 432205773
-		{ &Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint, "GetPreviousWaypoint" }, // 3086375749
-		{ &Z_Construct_UFunction_AWaypoint_GetRandomWaypoint, "GetRandomWaypoint" }, // 1367794675
+		{ &Z_Construct_UFunction_AWaypoint_GetNextWaypoint, "GetNextWaypoint" }, // 3698253102
+		{ &Z_Construct_UFunction_AWaypoint_GetPreviousWaypoint, "GetPreviousWaypoint" }, // 852732954
+		{ &Z_Construct_UFunction_AWaypoint_GetRandomWaypoint, "GetRandomWaypoint" }, // 388785114
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWaypoint_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "Waypoint.h" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "IncludePath", "Waypoints/Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWaypoint_Statics::NewProp_NextWaypoint_MetaData[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWaypoint_Statics::NewProp_NextWaypoint = { "NextWaypoint", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWaypoint, NextWaypoint), Z_Construct_UClass_AWaypoint_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWaypoint_Statics::NewProp_NextWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWaypoint_Statics::NewProp_NextWaypoint_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWaypoint_Statics::NewProp_PreviousWaypoint_MetaData[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AWaypoint_Statics::NewProp_PreviousWaypoint = { "PreviousWaypoint", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWaypoint, PreviousWaypoint), Z_Construct_UClass_AWaypoint_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AWaypoint_Statics::NewProp_PreviousWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWaypoint_Statics::NewProp_PreviousWaypoint_MetaData)) };
@@ -209,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWaypoint_Statics::NewProp_Waypoints_MetaData[] = {
 		{ "Category", "Waypoint" },
-		{ "ModuleRelativePath", "Waypoint.h" },
+		{ "ModuleRelativePath", "Waypoints/Waypoint.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AWaypoint_Statics::NewProp_Waypoints = { "Waypoints", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AWaypoint, Waypoints), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AWaypoint_Statics::NewProp_Waypoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AWaypoint_Statics::NewProp_Waypoints_MetaData)) };
@@ -246,7 +246,7 @@ void EmptyLinkFunctionForGeneratedCodeWaypoint() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWaypoint, 2811534242);
+	IMPLEMENT_CLASS(AWaypoint, 3303465770);
 	template<> FSMTEST_API UClass* StaticClass<AWaypoint>()
 	{
 		return AWaypoint::StaticClass();

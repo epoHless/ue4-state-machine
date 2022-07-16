@@ -17,6 +17,7 @@ class UState;
 #define FSMTest_Source_FSMTest_Character_StateProcessor_CharacterMovement_h_13_SPARSE_DATA
 #define FSMTest_Source_FSMTest_Character_StateProcessor_CharacterMovement_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetCrouchState); \
 	DECLARE_FUNCTION(execGetJumpState); \
 	DECLARE_FUNCTION(execGetMoveState); \
 	DECLARE_FUNCTION(execGetIdleState);
@@ -24,6 +25,7 @@ class UState;
 
 #define FSMTest_Source_FSMTest_Character_StateProcessor_CharacterMovement_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetCrouchState); \
 	DECLARE_FUNCTION(execGetJumpState); \
 	DECLARE_FUNCTION(execGetMoveState); \
 	DECLARE_FUNCTION(execGetIdleState);
@@ -74,7 +76,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UStateProcessor_CharacterMovement); \
 #define FSMTest_Source_FSMTest_Character_StateProcessor_CharacterMovement_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Idle() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, Idle); } \
 	FORCEINLINE static uint32 __PPO__Move() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, Move); } \
-	FORCEINLINE static uint32 __PPO__Jump() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, Jump); }
+	FORCEINLINE static uint32 __PPO__Jump() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, Jump); } \
+	FORCEINLINE static uint32 __PPO__IdleState() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, IdleState); } \
+	FORCEINLINE static uint32 __PPO__MoveState() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, MoveState); } \
+	FORCEINLINE static uint32 __PPO__JumpState() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, JumpState); } \
+	FORCEINLINE static uint32 __PPO__CrouchState() { return STRUCT_OFFSET(UStateProcessor_CharacterMovement, CrouchState); }
 
 
 #define FSMTest_Source_FSMTest_Character_StateProcessor_CharacterMovement_h_10_PROLOG

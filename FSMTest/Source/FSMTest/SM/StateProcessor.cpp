@@ -1,16 +1,17 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 #include "StateProcessor.h"
 #include "State.h"
+#include "GameFramework/Character.h"
 
 UAStateProcessor::UAStateProcessor()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
-void UAStateProcessor::ChangeState(TSubclassOf<UState> NewState)
+void UAStateProcessor::ChangeState(UState* NewState)
 {
 	CurrentState->Exit(this, Controller);
-	CurrentState = NewState.GetDefaultObject();
+	CurrentState = NewState;
 	CurrentState->Start(this, Controller);
 }
 

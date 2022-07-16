@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "FSMTest/TravelerComponent.h"
+#include "FSMTest/Waypoints/TravelerComponent.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -80,7 +80,7 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Traveler" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTravelerComponent, nullptr, "GetCurrentWaypoint", nullptr, nullptr, sizeof(TravelerComponent_eventGetCurrentWaypoint_Parms), Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint_Statics::Function_MetaDataParams)) };
@@ -113,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Traveler" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTravelerComponent, nullptr, "GetInitialWaypoint", nullptr, nullptr, sizeof(TravelerComponent_eventGetInitialWaypoint_Parms), Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint_Statics::Function_MetaDataParams)) };
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Traveler" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTravelerComponent, nullptr, "SetCurrentWaypoint", nullptr, nullptr, sizeof(TravelerComponent_eventSetCurrentWaypoint_Parms), Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint_Statics::Function_MetaDataParams)) };
@@ -183,7 +183,7 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Traveler" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTravelerComponent, nullptr, "SetInitialWaypoint", nullptr, nullptr, sizeof(TravelerComponent_eventSetInitialWaypoint_Parms), Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint_Statics::Function_MetaDataParams)) };
@@ -229,37 +229,37 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FSMTest,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UTravelerComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint, "GetCurrentWaypoint" }, // 2657388497
-		{ &Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint, "GetInitialWaypoint" }, // 2340146297
-		{ &Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint, "SetCurrentWaypoint" }, // 1945024217
-		{ &Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint, "SetInitialWaypoint" }, // 2157753389
+		{ &Z_Construct_UFunction_UTravelerComponent_GetCurrentWaypoint, "GetCurrentWaypoint" }, // 1058763410
+		{ &Z_Construct_UFunction_UTravelerComponent_GetInitialWaypoint, "GetInitialWaypoint" }, // 1412538023
+		{ &Z_Construct_UFunction_UTravelerComponent_SetCurrentWaypoint, "SetCurrentWaypoint" }, // 2788788650
+		{ &Z_Construct_UFunction_UTravelerComponent_SetInitialWaypoint, "SetInitialWaypoint" }, // 282596131
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTravelerComponent_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
-		{ "IncludePath", "TravelerComponent.h" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "IncludePath", "Waypoints/TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTravelerComponent_Statics::NewProp_InitialPosition_MetaData[] = {
 		{ "Category", "TravelerComponent" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTravelerComponent_Statics::NewProp_InitialPosition = { "InitialPosition", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTravelerComponent, InitialPosition), Z_Construct_UClass_AWaypoint_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_InitialPosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_InitialPosition_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTravelerComponent_Statics::NewProp_CurrentWaypoint_MetaData[] = {
 		{ "Category", "TravelerComponent" },
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTravelerComponent_Statics::NewProp_CurrentWaypoint = { "CurrentWaypoint", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTravelerComponent, CurrentWaypoint), Z_Construct_UClass_AWaypoint_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_CurrentWaypoint_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_CurrentWaypoint_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTravelerComponent_Statics::NewProp_Waypoints_Inner = { "Waypoints", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AWaypoint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTravelerComponent_Statics::NewProp_Waypoints_MetaData[] = {
-		{ "ModuleRelativePath", "TravelerComponent.h" },
+		{ "ModuleRelativePath", "Waypoints/TravelerComponent.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UTravelerComponent_Statics::NewProp_Waypoints = { "Waypoints", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UTravelerComponent, Waypoints), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_Waypoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UTravelerComponent_Statics::NewProp_Waypoints_MetaData)) };
@@ -296,7 +296,7 @@ void EmptyLinkFunctionForGeneratedCodeTravelerComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTravelerComponent, 631346830);
+	IMPLEMENT_CLASS(UTravelerComponent, 2524415212);
 	template<> FSMTEST_API UClass* StaticClass<UTravelerComponent>()
 	{
 		return UTravelerComponent::StaticClass();

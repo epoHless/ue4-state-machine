@@ -1,5 +1,8 @@
 ﻿#include "MoveState.h"
 
+#include "CrouchState.h"
+#include "IdleState.h"
+#include "JumpState.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
@@ -11,6 +14,19 @@ void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMov
 void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
 {
 	GEngine->AddOnScreenDebugMessage(0, 2, FColor::Blue, TEXT("Moving"));
+
+	if (character->Velocity == FVector::ZeroVector)
+	{
+		Processor->ChangeState(NewObject<UIdleState>());
+	}
+	if (character->IsFalling())
+	{
+		Processor->ChangeState(NewObject<UJumpState>());
+	}
+	if (character->IsCrouching())
+	{
+		Processor->ChangeState(NewObject<UCrouchState>());
+	}
 }
 
 void UMoveState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)

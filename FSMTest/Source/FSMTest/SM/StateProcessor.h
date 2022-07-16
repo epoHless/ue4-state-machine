@@ -15,15 +15,13 @@ public:
 	UAStateProcessor();
 
 	UFUNCTION(BlueprintCallable)
-	void ChangeState(TSubclassOf<UState> NewState);	
+	void ChangeState(UState* NewState);	
 
 	UFUNCTION(Category="Processor", BlueprintCallable, BlueprintPure)
 	FORCEINLINE UState* GetCurrentState()const { return CurrentState; }
 
 	UFUNCTION(Category="Processor", BlueprintCallable)
-	void SetController(UCharacterMovementComponent* NewController) {Controller = NewController;}
-
-	
+	void SetController(UCharacterMovementComponent* NewController) {Controller = NewController;}	
 
 protected:
 	virtual void BeginPlay() override;

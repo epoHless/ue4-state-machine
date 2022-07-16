@@ -17,54 +17,95 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 	FSMTEST_API UClass* Z_Construct_UClass_UStateProcessor_CharacterMovement();
 	FSMTEST_API UClass* Z_Construct_UClass_UAStateProcessor();
 	UPackage* Z_Construct_UPackage__Script_FSMTest();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	FSMTEST_API UClass* Z_Construct_UClass_UState_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 // End Cross Module References
+	DEFINE_FUNCTION(UStateProcessor_CharacterMovement::execGetCrouchState)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(UState**)Z_Param__Result=P_THIS->GetCrouchState();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UStateProcessor_CharacterMovement::execGetJumpState)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(TSubclassOf<UState> *)Z_Param__Result=P_THIS->GetJumpState();
+		*(UState**)Z_Param__Result=P_THIS->GetJumpState();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UStateProcessor_CharacterMovement::execGetMoveState)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(TSubclassOf<UState> *)Z_Param__Result=P_THIS->GetMoveState();
+		*(UState**)Z_Param__Result=P_THIS->GetMoveState();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UStateProcessor_CharacterMovement::execGetIdleState)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(TSubclassOf<UState> *)Z_Param__Result=P_THIS->GetIdleState();
+		*(UState**)Z_Param__Result=P_THIS->GetIdleState();
 		P_NATIVE_END;
 	}
 	void UStateProcessor_CharacterMovement::StaticRegisterNativesUStateProcessor_CharacterMovement()
 	{
 		UClass* Class = UStateProcessor_CharacterMovement::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetCrouchState", &UStateProcessor_CharacterMovement::execGetCrouchState },
 			{ "GetIdleState", &UStateProcessor_CharacterMovement::execGetIdleState },
 			{ "GetJumpState", &UStateProcessor_CharacterMovement::execGetJumpState },
 			{ "GetMoveState", &UStateProcessor_CharacterMovement::execGetMoveState },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics
+	struct Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics
 	{
-		struct StateProcessor_CharacterMovement_eventGetIdleState_Parms
+		struct StateProcessor_CharacterMovement_eventGetCrouchState_Parms
 		{
-			TSubclassOf<UState>  ReturnValue;
+			UState* ReturnValue;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetIdleState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetCrouchState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Processor" },
+		{ "ModuleRelativePath", "Character/StateProcessor_CharacterMovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UStateProcessor_CharacterMovement, nullptr, "GetCrouchState", nullptr, nullptr, sizeof(StateProcessor_CharacterMovement_eventGetCrouchState_Parms), Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics
+	{
+		struct StateProcessor_CharacterMovement_eventGetIdleState_Parms
+		{
+			UState* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetIdleState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState_Statics::NewProp_ReturnValue,
 	};
@@ -88,16 +129,16 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 	{
 		struct StateProcessor_CharacterMovement_eventGetJumpState_Parms
 		{
-			TSubclassOf<UState>  ReturnValue;
+			UState* ReturnValue;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetJumpState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetJumpState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState_Statics::NewProp_ReturnValue,
 	};
@@ -121,16 +162,16 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 	{
 		struct StateProcessor_CharacterMovement_eventGetMoveState_Parms
 		{
-			TSubclassOf<UState>  ReturnValue;
+			UState* ReturnValue;
 		};
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetMoveState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(StateProcessor_CharacterMovement_eventGetMoveState_Parms, ReturnValue), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState_Statics::NewProp_ReturnValue,
 	};
@@ -173,6 +214,22 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Jump_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Jump;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IdleState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_IdleState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoveState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MoveState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_JumpState;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CrouchState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CrouchState;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -182,9 +239,10 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FSMTest,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState, "GetIdleState" }, // 3860061839
-		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState, "GetJumpState" }, // 851332014
-		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState, "GetMoveState" }, // 2653740947
+		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetCrouchState, "GetCrouchState" }, // 2722689279
+		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetIdleState, "GetIdleState" }, // 745454861
+		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetJumpState, "GetJumpState" }, // 996573654
+		{ &Z_Construct_UFunction_UStateProcessor_CharacterMovement_GetMoveState, "GetMoveState" }, // 2593865767
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::Class_MetaDataParams[] = {
@@ -216,10 +274,42 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Jump = { "Jump", nullptr, (EPropertyFlags)0x0044000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_CharacterMovement, Jump), Z_Construct_UClass_UState_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Jump_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Jump_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_IdleState_MetaData[] = {
+		{ "Category", "StateProcessor_CharacterMovement" },
+		{ "ModuleRelativePath", "Character/StateProcessor_CharacterMovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_IdleState = { "IdleState", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_CharacterMovement, IdleState), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_IdleState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_IdleState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_MoveState_MetaData[] = {
+		{ "Category", "StateProcessor_CharacterMovement" },
+		{ "ModuleRelativePath", "Character/StateProcessor_CharacterMovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_MoveState = { "MoveState", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_CharacterMovement, MoveState), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_MoveState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_MoveState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_JumpState_MetaData[] = {
+		{ "Category", "StateProcessor_CharacterMovement" },
+		{ "ModuleRelativePath", "Character/StateProcessor_CharacterMovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_JumpState = { "JumpState", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_CharacterMovement, JumpState), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_JumpState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_JumpState_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_CrouchState_MetaData[] = {
+		{ "Category", "StateProcessor_CharacterMovement" },
+		{ "ModuleRelativePath", "Character/StateProcessor_CharacterMovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_CrouchState = { "CrouchState", nullptr, (EPropertyFlags)0x0040000000010001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UStateProcessor_CharacterMovement, CrouchState), Z_Construct_UClass_UState_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_CrouchState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_CrouchState_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Idle,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Move,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_Jump,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_IdleState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_MoveState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_JumpState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::NewProp_CrouchState,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UStateProcessor_CharacterMovement_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UStateProcessor_CharacterMovement>::IsAbstract,
@@ -248,7 +338,7 @@ void EmptyLinkFunctionForGeneratedCodeStateProcessor_CharacterMovement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UStateProcessor_CharacterMovement, 1500457320);
+	IMPLEMENT_CLASS(UStateProcessor_CharacterMovement, 2365325627);
 	template<> FSMTEST_API UClass* StaticClass<UStateProcessor_CharacterMovement>()
 	{
 		return UStateProcessor_CharacterMovement::StaticClass();

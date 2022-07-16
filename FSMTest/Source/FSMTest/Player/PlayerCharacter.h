@@ -14,6 +14,9 @@ class FSMTEST_API APlayerCharacter : public ACharacter
 public:
 	APlayerCharacter();
 
+	UPROPERTY(EditAnywhere)
+	float MovementSpeed = 200.0f;
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -22,6 +25,11 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	void MoveVert(float speed);
-	void MoveHori(float speed);
+	void MoveRight(float value);
+	void MoveForward(float value);
+
+	void CrouchPlayer();
+	void UncrouchPlayer();
 };
+
+
