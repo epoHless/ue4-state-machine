@@ -6,6 +6,7 @@
 UAStateProcessor::UAStateProcessor()
 {
 	PrimaryComponentTick.bCanEverTick = true;
+
 }
 
 void UAStateProcessor::ChangeState(UState* NewState)
@@ -21,7 +22,9 @@ UState* UAStateProcessor::GetStartupState_Implementation()
 }
 
 void UAStateProcessor::BeginPlay()
-{	
+{
+	Owner = Cast<APlayerCharacter, AActor>(GetOwner());
+
 	Super::BeginPlay();
 	
 	CurrentState = GetStartupState();

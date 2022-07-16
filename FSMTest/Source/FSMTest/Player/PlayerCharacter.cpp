@@ -31,6 +31,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &APlayerCharacter::JumpCharacter);
 	PlayerInputComponent->BindAction(TEXT("Roll"), IE_Pressed, this, &APlayerCharacter::RollCharacter);
 	
+	PlayerInputComponent->BindAction(TEXT("AttackStance"), IE_Pressed, this, &APlayerCharacter::ActivateAStance);
+	PlayerInputComponent->BindAction(TEXT("AttackStance"), IE_Released, this, &APlayerCharacter::DeactivateAStance);
+	
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &APlayerCharacter::CrouchPlayer);
 	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &APlayerCharacter::UncrouchPlayer);
 	
@@ -78,3 +81,6 @@ void APlayerCharacter::RollCharacter()
 	GetCharacterMovement()->JumpZVelocity = RollHeight;
 	Jump();
 }
+
+void APlayerCharacter::ActivateAStance(){ AttackStance = true; }
+void APlayerCharacter::DeactivateAStance(){ AttackStance = false; }

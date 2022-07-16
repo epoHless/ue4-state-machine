@@ -1,5 +1,6 @@
 ﻿#include "IdleState.h"
 
+#include "AttackState.h"
 #include "CrouchState.h"
 #include "JumpState.h"
 #include "MoveState.h"
@@ -27,6 +28,10 @@ void UIdleState::Update_Implementation(UAStateProcessor* Processor, UCharacterMo
 	if (character->IsCrouching())
 	{
 		Processor->ChangeState(NewObject<UCrouchState>());
+	}
+	if (Processor->ReturnOwner()->AttackStance)
+	{
+		Processor->ChangeState(NewObject<UAttackState>());
 	}
 }
 

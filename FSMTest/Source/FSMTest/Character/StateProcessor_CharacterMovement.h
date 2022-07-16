@@ -13,13 +13,6 @@ class FSMTEST_API UStateProcessor_CharacterMovement : public UAStateProcessor
 	GENERATED_BODY()
 
 	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<UState> Idle;
-	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<UState> Move;
-	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<UState> Jump;
-
-	UPROPERTY(EditDefaultsOnly)
 	UState* IdleState;
 
 	UPROPERTY(EditDefaultsOnly)
@@ -30,6 +23,9 @@ class FSMTEST_API UStateProcessor_CharacterMovement : public UAStateProcessor
 
 	UPROPERTY(EditDefaultsOnly)
 	UState* CrouchState;
+
+	UPROPERTY(EditDefaultsOnly)
+	UState* AttackState;
 
 public:
 	UStateProcessor_CharacterMovement();
@@ -45,6 +41,9 @@ public:
 
 	UFUNCTION(Category="Processor", BlueprintCallable, BlueprintPure)
 	FORCEINLINE UState* GetCrouchState(){return CrouchState;}
+
+	UFUNCTION(Category="Processor", BlueprintCallable, BlueprintPure)
+	FORCEINLINE UState* GetAttackState(){return AttackState;}
 	
 	virtual void BeginPlay() override;
 

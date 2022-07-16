@@ -22,6 +22,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	float JumpHeight = 460.0f;
+	
+	UPROPERTY(EditAnywhere)
+	bool AttackStance = false;
 
 protected:
 	virtual void BeginPlay() override;
@@ -31,6 +34,9 @@ public:
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION(BlueprintCallable, BlueprintPure)
+	FORCEINLINE bool IsAttacking() const { return AttackStance; }
+
 	void MoveRight(float value);
 	void MoveForward(float value);
 
@@ -39,6 +45,9 @@ public:
 
 	void JumpCharacter();
 	void RollCharacter();
+	
+	void ActivateAStance();
+	void DeactivateAStance();
 };
 
 
