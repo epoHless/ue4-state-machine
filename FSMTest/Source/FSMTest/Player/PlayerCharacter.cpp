@@ -69,7 +69,7 @@ void APlayerCharacter::UncrouchPlayer()
 
 void APlayerCharacter::JumpCharacter()
 {
-	GetCharacterMovement()->JumpZVelocity = JumpHeight;
+	GetCharacterMovement()->JumpZVelocity = JumpHeight;	
 	Jump();
 }
 
