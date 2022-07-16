@@ -1,7 +1,0 @@
-C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\UE4Editor\Development\FSMTest\Definitions.FSMTest.h
-C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Source\FSMTest\Interaction\NotifierWall.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
-C:\Users\kevin\Documents\Programming\Unreal\ue4-state-machine\ue4-state-machine\FSMTest\Intermediate\Build\Win64\UE4Editor\Inc\FSMTest\NotifierWall.generated.h
