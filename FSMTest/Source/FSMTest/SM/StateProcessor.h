@@ -39,10 +39,9 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	UState* CurrentState;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY()
 	UCharacterMovementComponent* Controller;
 
-	UPROPERTY(VisibleAnywhere)
-	APlayerCharacter* Owner;
-	
+	UPROPERTY()
+	APlayerCharacter* Owner;	
 };

@@ -37,6 +37,8 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	FORCEINLINE bool IsAttacking() const { return AttackStance; }
 
+private:
+	
 	void MoveRight(float value);
 	void MoveForward(float value);
 

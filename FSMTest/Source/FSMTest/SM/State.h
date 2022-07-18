@@ -11,22 +11,26 @@ class FSMTEST_API UState : public UObject
 	friend class UAStateProcessor;
 public:
 	UFUNCTION(Category="State", BlueprintNativeEvent)
-	void Start(UAStateProcessor* processor, UCharacterMovementComponent* character);
+	void Start(UAStateProcessor* processor, UCharacterMovementComponent* Character);
 
 	UFUNCTION(Category="State", BlueprintNativeEvent, BlueprintCallable)
-	void Update(UAStateProcessor* Processor, UCharacterMovementComponent* character);
+	void Update(UAStateProcessor* Processor, UCharacterMovementComponent* Character);
 
 	UFUNCTION(Category="State", BlueprintNativeEvent)
-	void Exit(UAStateProcessor* Processor, UCharacterMovementComponent* character);
+	void Exit(UAStateProcessor* Processor, UCharacterMovementComponent* Character);
 
 	UPROPERTY(EditAnywhere)
-	UCharacterMovementComponent* CharacterController;
-	
-	UPROPERTY()
-	FString Name;
+	UCharacterMovementComponent* CharacterController;	
 
 	UFUNCTION(Category = "State", BlueprintCallable, BlueprintPure)
 	FORCEINLINE FString ReturnName()const { return Name; }
+
+	UFUNCTION(Category = "State", BlueprintCallable)
+	void SetName(FString NewName) { Name = NewName; }
+
+private:
+	UPROPERTY()
+	FString Name;
 };
 
 inline void UState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)

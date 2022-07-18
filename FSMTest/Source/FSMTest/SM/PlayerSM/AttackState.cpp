@@ -6,31 +6,36 @@
 #include "FSMTest/SM/StateProcessor.h"
 
 
-void UAttackState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UAttackState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-	character->bOrientRotationToMovement = false;
-	character->GetNavAgentPropertiesRef().bCanCrouch = false;
-	character->MaxWalkSpeed = 200.0f;
+	Character->bOrientRotationToMovement = false;
+	Character->GetNavAgentPropertiesRef().bCanCrouch = false;
+	Character->MaxWalkSpeed = 200.0f;
 	Processor->ReturnOwner()->bUseControllerRotationYaw = true;
-	Name = "Focusing";
+	
+	SetName("Focusing");
 }
 
-void UAttackState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UAttackState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 	if (!Processor->ReturnOwner()->AttackStance)
 	{
-		if (character->Velocity == FVector::ZeroVector)
+		if (Character->Velocity == FVector::ZeroVector)
 			Processor->ChangeState(NewObject<UIdleState>());
 		else
 			Processor->ChangeState(NewObject<UMoveState>());
+		
+		if (Character->IsFalling())
+		{
+			Processor->ChangeState(NewObject<UJumpState>());
+		}
 	}
 }
 
-void UAttackState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UAttackState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-	character->bOrientRotationToMovement = true;
-	character->GetNavAgentPropertiesRef().bCanCrouch = true;
-	character->MaxWalkSpeed = 600.0f;
+	Character->bOrientRotationToMovement = true;
+	Character->GetNavAgentPropertiesRef().bCanCrouch = true;
+	Character->MaxWalkSpeed = 600.0f;
 	Processor->ReturnOwner()->bUseControllerRotationYaw = false;
-
 }

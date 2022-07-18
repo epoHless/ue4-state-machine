@@ -22,7 +22,7 @@ class FSMTEST_API UStateProcessor_CharacterMovement : public UAStateProcessor
 	UState* JumpState;
 
 	UPROPERTY(EditDefaultsOnly)
-	UState* CrouchState;
+	UState* WalkState;
 
 	UPROPERTY(EditDefaultsOnly)
 	UState* AttackState;
@@ -40,7 +40,7 @@ public:
 	FORCEINLINE UState* GetJumpState(){return JumpState;}
 
 	UFUNCTION(Category="Processor", BlueprintCallable, BlueprintPure)
-	FORCEINLINE UState* GetCrouchState(){return CrouchState;}
+	FORCEINLINE UState* GetWalkState(){return WalkState;}
 
 	UFUNCTION(Category="Processor", BlueprintCallable, BlueprintPure)
 	FORCEINLINE UState* GetAttackState(){return AttackState;}

@@ -9,14 +9,14 @@ APlayerCharacter::APlayerCharacter()
 	GetCharacterMovement()->NavAgentProps.bCanCrouch = true; 
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-	GetCharacterMovement()->RotationRate = FRotator(0.0f,500.0f,0.0f);
+	GetCharacterMovement()->RotationRate = FRotator(0.0f,350.0f,0.0f);
 
-	GetCharacterMovement()->JumpZVelocity = JumpHeight;
 }
 
 void APlayerCharacter::BeginPlay()
-{
-	Super::BeginPlay();	
+{	
+	Super::BeginPlay();
+	GetCharacterMovement()->JumpZVelocity = JumpHeight;
 }
 
 void APlayerCharacter::Tick(float DeltaTime)
@@ -48,15 +48,15 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 void APlayerCharacter::MoveRight(float value)
 {
-	auto YawRotation = GetControlRotation().Yaw;
-	auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
+	const auto YawRotation = GetControlRotation().Yaw;
+	const auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
 	AddMovementInput(UKismetMathLibrary::GetRightVector(NewRotation), value);
 }
 
 void APlayerCharacter::MoveForward(float value)
 {
-	auto YawRotation = GetControlRotation().Yaw;
-	auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
+	const auto YawRotation = GetControlRotation().Yaw;
+	const auto NewRotation = UKismetMathLibrary::MakeRotator(0,0,YawRotation);	
 	AddMovementInput(UKismetMathLibrary::GetForwardVector(NewRotation), value);
 }
 

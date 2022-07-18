@@ -1,30 +1,30 @@
 ﻿#include "MoveState.h"
 
 #include "AttackState.h"
-#include "CrouchState.h"
+#include "WalkState.h"
 #include "IdleState.h"
 #include "JumpState.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
-void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-	Name = "Moving";
+	SetName("Moving");
 }
 
-void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 
-	if (character->Velocity == FVector::ZeroVector)
+	if (Character->Velocity == FVector::ZeroVector)
 	{
 		Processor->ChangeState(NewObject<UIdleState>());
 	}
-	if (character->IsFalling())
+	if (Character->IsFalling())
 	{
 		Processor->ChangeState(NewObject<UJumpState>());
 	}
-	if (character->IsCrouching())
+	if (Character->IsCrouching())
 	{
-		Processor->ChangeState(NewObject<UCrouchState>());
+		Processor->ChangeState(NewObject<UWalkState>());
 	}
 	if (Processor->ReturnOwner()->AttackStance)
 	{
@@ -32,6 +32,6 @@ void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMo
 	}
 }
 
-void UMoveState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UMoveState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 }

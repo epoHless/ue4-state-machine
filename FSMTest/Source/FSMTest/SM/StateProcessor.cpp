@@ -6,7 +6,6 @@
 UAStateProcessor::UAStateProcessor()
 {
 	PrimaryComponentTick.bCanEverTick = true;
-
 }
 
 void UAStateProcessor::ChangeState(UState* NewState)

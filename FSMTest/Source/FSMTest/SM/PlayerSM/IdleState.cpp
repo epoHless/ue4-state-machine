@@ -1,30 +1,30 @@
 ﻿#include "IdleState.h"
 
 #include "AttackState.h"
-#include "CrouchState.h"
+#include "WalkState.h"
 #include "JumpState.h"
 #include "MoveState.h"
 #include "FSMTest/SM/StateProcessor.h"
 
 
-void UIdleState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UIdleState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-	Name = "Idle";
+	SetName("Idle");
 }
 
-void UIdleState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UIdleState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-	if (character->Velocity.Size() > 0.0f)
+	if (Character->Velocity.Size() > 0.0f)
 	{
 		Processor->ChangeState(NewObject<UMoveState>());
 	}
-	if (character->IsFalling())
+	if (Character->IsFalling())
 	{
 		Processor->ChangeState(NewObject<UJumpState>());
 	}
-	if (character->IsCrouching())
+	if (Character->IsCrouching())
 	{
-		Processor->ChangeState(NewObject<UCrouchState>());
+		Processor->ChangeState(NewObject<UWalkState>());
 	}
 	if (Processor->ReturnOwner()->AttackStance)
 	{
@@ -32,6 +32,6 @@ void UIdleState::Update_Implementation(UAStateProcessor* Processor, UCharacterMo
 	}
 }
 
-void UIdleState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* character)
+void UIdleState::Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 }
