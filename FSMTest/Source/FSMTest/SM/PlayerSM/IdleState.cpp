@@ -1,12 +1,5 @@
 ﻿#include "IdleState.h"
 
-#include "AttackState.h"
-#include "WalkState.h"
-#include "JumpState.h"
-#include "MoveState.h"
-#include "FSMTest/SM/StateProcessor.h"
-
-
 void UIdleState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 	SetName("Idle");

@@ -10,13 +10,15 @@ APlayerCharacter::APlayerCharacter()
 	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f,350.0f,0.0f);
-
+	
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
 
 void APlayerCharacter::BeginPlay()
 {	
 	Super::BeginPlay();
 	GetCharacterMovement()->JumpZVelocity = JumpHeight;
+	GetCharacterMovement()->MaxWalkSpeed = MovementSpeed;
 }
 
 void APlayerCharacter::Tick(float DeltaTime)

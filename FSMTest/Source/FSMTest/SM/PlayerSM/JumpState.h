@@ -1,14 +1,8 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
+﻿#pragma once
 
-#pragma once
-
-#include "CoreMinimal.h"
-#include "FSMTest/SM/State.h"
+#include "States.hpp"
 #include "JumpState.generated.h"
 
-/**
- * 
- */
 UCLASS()
 class FSMTEST_API UJumpState : public UState
 {

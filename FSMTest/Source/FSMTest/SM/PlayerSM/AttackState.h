@@ -1,5 +1,6 @@
 ﻿#pragma once
-#include "FSMTest/SM/State.h"
+
+#include "States.hpp"
 #include "AttackState.generated.h"
 
 UCLASS(BlueprintType)
@@ -11,4 +12,5 @@ public:
 	virtual void Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character) override;
 	virtual void Exit_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character) override;
 protected:
+	void ToggleCamera(float MoveSpeed, bool Toggle, UCharacterMovementComponent* Character, UAStateProcessor* Processor);
 };

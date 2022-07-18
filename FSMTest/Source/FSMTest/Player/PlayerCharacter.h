@@ -15,7 +15,10 @@ public:
 	APlayerCharacter();
 
 	UPROPERTY(EditAnywhere)
-	float MovementSpeed = 200.0f;
+	float MovementSpeed = 600.0f;
+
+	UPROPERTY(EditAnywhere)
+	float AttackStanceMovementSpeed = 200.0f;
 
 	UPROPERTY(EditAnywhere)
 	float RollHeight = 50.0f;

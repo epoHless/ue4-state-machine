@@ -1,5 +1,4 @@
 ﻿#include "JumpState.h"
-#include "IdleState.h"
 
 void UJumpState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {

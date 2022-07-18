@@ -1,11 +1,5 @@
 ﻿#include "MoveState.h"
 
-#include "AttackState.h"
-#include "WalkState.h"
-#include "IdleState.h"
-#include "JumpState.h"
-#include "GameFramework/CharacterMovementComponent.h"
-
 void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
 	SetName("Moving");
@@ -13,7 +7,6 @@ void UMoveState::Start_Implementation(UAStateProcessor* Processor, UCharacterMov
 
 void UMoveState::Update_Implementation(UAStateProcessor* Processor, UCharacterMovementComponent* Character)
 {
-
 	if (Character->Velocity == FVector::ZeroVector)
 	{
 		Processor->ChangeState(NewObject<UIdleState>());
